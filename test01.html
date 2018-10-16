@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>script test</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+  <script>/*Case1*//*document.addEventListener('DOMContentLoaded', function() {let app = document.getElementById('todo-app');let items = app.getElementsByClassName('item');// 각 아이템에 이벤트 리스너를 등록합니다.for (let item of items) {item.addEventListener('click', function() {alert('you clicked on item: ' + item.innerHTML);});}});*//*Case2*/document.addEventListener('DOMContentLoaded', function() {let app = document.getElementById('todo-app');// 리스트 아이템의 전체 영역에 이벤트 리스너를 등록합니다.app.addEventListener('click', function(e) {if (e.target && e.target.nodeName === 'LI') {let item = e.target;alert('you clicked on item: ' + item.innerHTML);}});});</script>
+  <ul id="todo-app">
+    <li class="item">Walk the dog</li>
+    <li class="item">Pay bills</li>
+    <li class="item">Make dinner</li>
+    <li class="item">Code for one hour</li>
+  </ul>
+  <script>
+  const arr = [10, 12, 15, 21];
+  for (let i = 0; i < arr.length; i++) {
+    // ES6 의 let 은 함수가 호출 될 때 마다 인덱스 i 값이 바인딩 되는 새로운 바인딩 기법을 사용합니다.
+    // 더 자세한 내용은 다음 링크에서 확인하세요.
+    // http://exploringjs.com/es6/ch_variables.html#sec_let-const-loop-heads
+    setTimeout(function() {
+      console.log('The index of this number is: ' + i);
+    }, 3000);
+  }
+  </script>
+  <script>
+
+  </script>
+
+
+
+
+  <span class="icon icon-device-desktop">xx</span>
+
+</body>
+</html>
