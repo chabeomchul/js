@@ -16,3 +16,5 @@ console.log(person.name);
 
 var arrTest = ['asdf','xdfd','ewes','dxws','xxxw','ffff'];
 arrTest.forEach((x, i) => console.log(i + "." + x));
+
+console.log('add source');
