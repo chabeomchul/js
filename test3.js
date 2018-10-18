@@ -18,4 +18,8 @@ var arrTest = ['asdf','xdfd','ewes','dxws','xxxw','ffff'];
 arrTest.forEach((x, i) => console.log(i + "." + x));
 
 console.log('add source');
+console.log('git_test chagned!!');
 console.log('js_test chagned!!');
+
+
+
